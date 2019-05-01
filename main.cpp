@@ -6,7 +6,14 @@ using namespace std;
 
 int main(){
 	char choice;
-	int len=0;
+	string item;
+	
+	cout << "Length of the list: ";
+	int l;
+	cin >> l;
+	
+	Todo list(l);
+	
 	
 	while (choice !='x'){
 		cout << endl;
@@ -20,19 +27,21 @@ int main(){
 		
 		switch(choice){
 			case 'a':
-				
+				cout <<"Item: ";
+				cin >> item;
+				list.add(item);
 				break;
 			
 			case 'd':
-			
+				list.done();
 				break;
 				
 			case 'p':
-				
+				list.print();
 				break;
 				
 			case 'x':
-				
+				cout << "Exiting...";
 				break;
 			
 			default:
