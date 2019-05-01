@@ -11,8 +11,8 @@ int main(){
 	
 	cout << "Length of the list: ";
 	cin >> l;
-	Todo list;
-	set_length.list(l);
+	
+	Todo list(l);
 	
 	while (choice !='x'){
 		cout << endl;
