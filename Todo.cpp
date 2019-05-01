@@ -10,7 +10,15 @@ class Todo{
 		string item;
 		
 	public:
-		//setters:
+		Todo();
+		
+		Todo(int len);
+		
+		void add(string item);
+		void done();
+		void done(int n);
+		void print();
+		
 		
 		
 };
