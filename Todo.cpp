@@ -13,7 +13,6 @@ class Todo{
 	public:
 		Todo();
 		Todo(int l);
-		~Todo();
 		
 		void add(string item);
 		void done();
