@@ -11,8 +11,11 @@ class Todo{
 		string item;
 		
 	public:
-		Todo();
-		Todo(int l);
+		void set_length(int l){length=l;}
+		Todo(){
+			set_length(0);
+		}
+		
 		
 		void add(string item);
 		void done();

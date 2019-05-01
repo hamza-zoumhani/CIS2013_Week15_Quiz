@@ -6,14 +6,13 @@ using namespace std;
 
 int main(){
 	char choice;
+	int l=0;
 	string item;
 	
 	cout << "Length of the list: ";
-	int l;
 	cin >> l;
-	
-	Todo list(l);
-	
+	Todo list;
+	set_length.list(l);
 	
 	while (choice !='x'){
 		cout << endl;
