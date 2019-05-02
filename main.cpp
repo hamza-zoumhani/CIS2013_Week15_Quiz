@@ -8,11 +8,11 @@ int main(){
 	char choice;
 	int l=0;
 	string item;
+	Todo list;
 	
 	cout << "Length of the list: ";
 	cin >> l;
 	
-	Todo list(l);
 	
 	while (choice !='x'){
 		cout << endl;
@@ -29,10 +29,6 @@ int main(){
 				cout <<"Item: ";
 				cin >> item;
 				list.add(item);
-				break;
-			
-			case 'd':
-				list.done();
 				break;
 				
 			case 'p':
